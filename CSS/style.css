@@ -9,11 +9,13 @@
     right: 0;
     z-index: -1;
     display: block;
-    background-image: url("https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?cs=srgb&dl=pexels-983200.jpg&fm=jpg");
+    background-image: url("https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=pexels-1053687.jpg&fm=jpg");
+    background-size: cover;
     height: 100%;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-  }
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+
+.space-row{
+    margin-bottom: 40px;
+}
