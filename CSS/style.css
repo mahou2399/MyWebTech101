@@ -1,0 +1,19 @@
+
+.display-1{
+    color: rgba(255, 255, 255, 1);
+}
+
+.bg-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?cs=srgb&dl=pexels-983200.jpg&fm=jpg");
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
