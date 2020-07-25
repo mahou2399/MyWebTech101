@@ -7,7 +7,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     display: block;
     background-image: url("https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=pexels-1053687.jpg&fm=jpg");
     background-size: cover;
@@ -18,4 +18,9 @@
 
 .space-row{
     margin-bottom: 40px;
+}
+
+.content {
+    position: fixed;
+    z-index: 9999;
 }
