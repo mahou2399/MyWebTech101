@@ -1,3 +1,7 @@
+.display-1{
+    color: rgba(255, 255, 255, 1);
+}
+
 .bg-image {
     position: fixed;
     left: 0;
@@ -7,14 +11,6 @@
     background-image: url("https://images.pexels.com/photos/1233101/pexels-photo-1233101.jpeg?cs=srgb&dl=pexels-1233101.jpg&fm=jpg");
     background-size: cover;
     height: 100%;
-    filter: blur(5px);
-    transform: scale(1.2);
-  }
-
-.body {
-    padding: 45px, 0, 0, 0;
-}
-
-.display-1{
-    color: rgba(255, 255, 255, 1);
+    filter: blur(8px);
+    transform: scale(1.1);
 }
