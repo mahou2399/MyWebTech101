@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="./css/scheduleStyle.css">
+
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">My Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Favorite Food
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="foodPage.html">Food</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="drinkPage.html">Drink</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="dessertPage.html">Dessert</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./schedule.html">Schedule</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <!--table class schedule-->
+    <div class="container-fluid padding">
+        <table class="table table-bordered table-dark text-center">
+            <!--day and time-->
+            <thead>
+                <tr>
+                    <th colspan="1">Day&Time</th>
+                    <th colspan="2">8:00-9:00</th>
+                    <th colspan="2">9:00-10:00</th>
+                    <th colspan="2">10:00-11:00</th>
+                    <th colspan="2">11:00-12:00</th>
+                    <th colspan="2">12:00-13:00</th>
+                    <th colspan="2">13:00-14:00</th>
+                    <th colspan="2">14:00-15:00</th>
+                    <th colspan="2">15:00-16:00</th>
+                    <th colspan="2">16:00-17:00</th>
+                    <th colspan="2">17:00-18:00</th>
+                </tr>
+            </thead>
+
+            <!--detail-->
+            <tbody>
+                <!--Monday-->
+                <tr>
+                    <th scope="row">Monday</th>
+                    <td colspan="6">Seminar</td>
+                    <td colspan="14"></td>
+                </tr>
+
+                <!--Tuesday-->
+                <tr>
+                    <th scope="row">Tuesday</th>
+                    <td colspan="4">Web Technology and Web Services Lecture</td>
+                    <td colspan="5"></td>
+                    <td colspan="4">Web Technology and Web Services Lab</td>
+                    <td colspan="7"></td>
+
+
+                </tr>
+
+                <!--Wednesday-->
+                <tr>
+                    <th scope="row">Wednesday</th>
+                    <td colspan="4"></td>
+                    <td colspan="3">Intellectual Properties and Professional Ethics</td>
+                    <td colspan="1"></td>
+                    <td colspan="4">Operating Systems</td>
+                    <td colspan="4"> System Analysis and Design Lecture</td>
+                    <td colspan="4"> System Analysis and Design Lab</td>
+                </tr>
+
+                <!--Thurday-->
+                <tr>
+                    <th scope="row">Thurday</th>
+                    <td colspan="4">Introduction to Software Engineering Lecture</td>
+                    <td colspan="2"></td>
+                    <td colspan="4">Introduction to Software Engineering Lab</td>
+                    <td colspan="3">Introduction to Interactive Computer Graphics Lecture</td>
+                    <td colspan="3">Introduction to Interactive Computer Graphics Lab</td>
+                    <td colspan="4"></td>
+                </tr>
+
+                <!--Friday-->
+                <tr>
+                    <th scope="row">Friday</th>
+                    <td colspan="4"></td>
+                    <td colspan="3">Intellectual Properties and Professional Ethics</td>
+                    <td colspan="1"></td>
+                    <td colspan="4">Operating Systems</td>
+                    <td colspan="8"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
