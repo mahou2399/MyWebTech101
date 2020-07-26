@@ -1,0 +1,24 @@
+.bg-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("https://images.pexels.com/photos/4110096/pexels-photo-4110096.jpeg?cs=srgb&dl=pexels-4110096.jpg&fm=jpg");
+    background-size: cover;
+    height: 100%;
+    filter: blur(5px);
+    transform: scale(1.2)
+}
+
+.body {
+    padding: 45px, 0, 0, 0;
+}
+
+.space-row{
+      margin-top: 40px;
+}
+
+.display-1{
+    color: rgba(255, 255, 255, 1);
+}
