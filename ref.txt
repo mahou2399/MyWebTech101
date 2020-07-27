@@ -31,6 +31,7 @@ https://images.pexels.com/photos/220129/pexels-photo-220129.jpeg?cs=srgb&dl=pexe
 https://images.pexels.com/photos/59598/pexels-photo-59598.jpeg?cs=srgb&dl=pexels-59598.jpg&fm=jpg bg2
 https://images.pexels.com/photos/1233101/pexels-photo-1233101.jpeg?cs=srgb&dl=pexels-1233101.jpg&fm=jpg bg3
 https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?cs=srgb&dl=pexels-1566837.jpg&fm=jpg salmon
+https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-1440105_960_720.jpg bbq
 
 drink
 https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?cs=srgb&dl=pexels-605408.jpg&fm=jpg bg
@@ -50,7 +51,7 @@ https://cdn.pixabay.com/photo/2019/01/28/10/01/oreo-cake-3960003_960_720.jpg ore
 https://cdn.pixabay.com/photo/2016/08/08/16/20/cheesecake-1578691_960_720.jpg cheesecake
 https://cdn.pixabay.com/photo/2017/08/03/14/38/ice-cream-2576622_960_720.jpg ice cream
 https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?cs=srgb&dl=pexels-2067396.jpg&fm=jpg brownie
-https://cdn.pixabay.com/photo/2018/01/12/16/31/nougat-3078581_960_720.jpg chocolate smoth
+https://cdn.pixabay.com/photo/2018/01/12/16/31/nougat-3078581_960_720.jpg mousse cake
 
 
 code
