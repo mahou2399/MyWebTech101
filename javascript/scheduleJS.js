@@ -1,7 +1,3 @@
-console.log('Hello world')
-console.log('Fuck you js')
-
-
 //Course Class: 
 class Course {
     constructor(title, code, section, type, timeStart, timeFinish, day, professor) {
@@ -155,51 +151,54 @@ class UI {
                 timeFinish: "14:00",
                 day: "Friday",
                 professor: "ศิริกร จันทร์นวล"
-            },
+            }
         ]
-        const courses = registerCourses;
+
+        
+        //Clear list
+        const courses = [];
+        UI.clearCourses();
 
         //Course Filter Loop
-        console.log(courses)
-        console.log(courses[1])
-        console.log(courses[1].day)
-        console.log(courses.length)
-
-
-        for (let i = 0; i < courses.length; i++) {
-            console.log(i)
-            console.log(courses[i].day)
+        for (let i = 0; i < registerCourses.length; i++) {
             //input Day
-            if (courses[i].day == dayInput) {
-                UI.addCourseToList(courses[i])
+            if (registerCourses[i].day == dayInput) {
+                courses.push(registerCourses[i])
             }
         }
-        //courses.forEach((course) => UI.addCourseToList(course))
+        
+        //Course Display update
+        courses.forEach((course) => UI.addCourseToList(course));
     }
-
+    
+    static clearCourses(){
+        const list = document.querySelector('#course-list');
+        document.getElementById('course-list').innerHTML = "";
+    }
+    
     static addCourseToList(course) {
         const list = document.querySelector('#course-list');
-
         const row = document.createElement('tr');
-
-        row.innerHTML = `
+        /*row.innerHTML = `
         <td>${course.title}<td/>
         <td>${course.code}<td/>
         <td>${course.section}<td/>
         <td>${course.type}<td/>
-        <td>${course.timeStart}"-"${course.timeFinish}<td/>
+        <td>${course.timeStart}-${course.timeFinish}<td/>
         <td>${course.day}<td/>
         <td>${course.professor}<td/>
-        `;
+        `*/
 
+        row.insertCell().innerHTML+=course.title;
+        row.insertCell().innerHTML+=course.code;
+        row.insertCell().innerHTML+=course.section;
+        row.insertCell().innerHTML+=course.type;
+        row.insertCell().innerHTML+=course.timeStart-course.timeFinish;
+        row.insertCell().innerHTML+=course.day;
+        row.insertCell().innerHTML+=course.professor;
         list.appendChild(row);
-    }
-
-    static resetCourse(){
-        course
     }
 }
 
 //Event: Display Course
 document.addEventListener('DOMContentLoaded', UI.displayCourses);
-
