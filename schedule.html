@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summary</title>
+    <title>schedule</title>
+
+
 
     <!--css link-->
     <link rel="stylesheet" href="./css/scheduleStyle.css">
@@ -26,21 +28,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!--fix favo.ico error-->
+    <!--link rel="icon" type="image/png" href="https://image.flaticon.com/icons/svg/126/126472.svg"-->
 
 
 </head>
 
-<body>
+<body style="background: black;">
 
     <!--background image-->
     <div class="bg-image"></div>
 
     <!--nav bar-->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="./index.html">My Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,7 +63,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./schedule.html">Schedule</a>
+                    <a class="nav-link" href="#">Schedule</a>
                 </li>
             </ul>
         </div>
@@ -87,7 +91,7 @@
             <!--day and time-->
             <thead>
                 <tr>
-                    <th colspan="1">Day&Time</th>
+                    <th colspan="2">Day&Time</th>
                     <th colspan="2">8:00-9:00</th>
                     <th colspan="2">9:00-10:00</th>
                     <th colspan="2">10:00-11:00</th>
@@ -105,14 +109,20 @@
             <tbody>
                 <!--Monday-->
                 <tr>
-                    <th scope="row">Monday</th>
+                    <th scope="row" colspan="2">
+                        <button class="btn btn-primary btn-lg btn-block" onclick="UI.displayCourses('Monday')">
+                            Monday</button>
+                    </th>
                     <td colspan="6">Seminar</td>
                     <td colspan="14"></td>
                 </tr>
 
                 <!--Tuesday-->
                 <tr>
-                    <th scope="row">Tuesday</th>
+                    <th scope="row" colspan="2">
+                        <button class="btn btn-primary btn-lg btn-block"
+                            onclick="UI.displayCourses('Tuesday')">Tuesday</button>
+                    </th>
                     <td colspan="4">Web Technology and Web Services Lecture</td>
                     <td colspan="5"></td>
                     <td colspan="4">Web Technology and Web Services Lab</td>
@@ -123,7 +133,10 @@
 
                 <!--Wednesday-->
                 <tr>
-                    <th scope="row">Wednesday</th>
+                    <th scope="row" colspan="2">
+                        <button class="btn btn-primary btn-lg btn-block"
+                            onclick="UI.displayCourses('Wednesday')">Wednesday</button>
+                    </th>
                     <td colspan="4"></td>
                     <td colspan="3">Intellectual Properties and Professional Ethics</td>
                     <td colspan="1"></td>
@@ -134,7 +147,8 @@
 
                 <!--Thurday-->
                 <tr>
-                    <th scope="row">Thurday</th>
+                    <th scope="row" colspan="2"><button class="btn btn-primary btn-lg btn-block"
+                            onclick="UI.displayCourses('Thurday')">Thurday</button></th>
                     <td colspan="4">Introduction to Software Engineering Lecture</td>
                     <td colspan="2"></td>
                     <td colspan="4">Introduction to Software Engineering Lab</td>
@@ -145,7 +159,8 @@
 
                 <!--Friday-->
                 <tr>
-                    <th scope="row">Friday</th>
+                    <th scope="row" colspan="2"><button class="btn btn-primary btn-lg btn-block"
+                            onclick="UI.displayCourses('Friday')">Friday</button></th>
                     <td colspan="4"></td>
                     <td colspan="3">Intellectual Properties and Professional Ethics</td>
                     <td colspan="1"></td>
@@ -156,6 +171,57 @@
         </table>
     </div>
 
+    <!--class detail-->
+    <table class="table table-dark text-center">
+        <thead>
+            <tr>
+                <th>
+                    Course
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Code
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Section
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Time
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Day
+                </th>
+                <th>
+
+                </th>
+                <th>
+                    Professor
+                </th>
+            </tr>
+        </thead>
+        <tbody id="course-list"></tbody>
+    </table>
+
+    <!--Javascript link-->
+    <script src="javascript/scheduleJS.js">
+    </script>
 </body>
 
 </html>
