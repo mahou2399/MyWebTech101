@@ -15,7 +15,6 @@ class Course {
 //UI Class: Handle UI Tasks
 class UI {
     static displayCourses(dayInput) {
-        console.log(dayInput)
         const registerCourses = [
             //Monday
             {
@@ -154,7 +153,6 @@ class UI {
             }
         ]
 
-        
         //Clear list
         const courses = [];
         UI.clearCourses();
@@ -166,28 +164,54 @@ class UI {
                 courses.push(registerCourses[i])
             }
         }
-        
+
         //Course Display update
-        courses.forEach((course) => UI.addCourseToList(course));
+        for (let i = 0; i < courses.length; i++) {
+            UI.addCourseToList(courses[i], i);
+        }
     }
-    
-    static clearCourses(){
+
+    static clearCourses() {
         const list = document.querySelector('#course-list');
         document.getElementById('course-list').innerHTML = "";
     }
-    
-    static addCourseToList(course) {
+
+    static addCourseToList(course, i) {
         const list = document.querySelector('#course-list');
         const row = document.createElement('tr');
         //Data Cells
-        row.insertCell().innerHTML+=course.title;
-        row.insertCell().innerHTML+=course.code;
-        row.insertCell().innerHTML+=course.section;
-        row.insertCell().innerHTML+=course.type;
-        row.insertCell().innerHTML+=(course.timeStart+"-"+course.timeFinish);
-        row.insertCell().innerHTML+=course.day;
-        row.insertCell().innerHTML+=course.professor;
-        row.insertCell().innerHTM = document.createElement('button');
+        row.innerHTML = `<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal${i}">${course.title}</button>
+
+        <!--Modal-->
+        <div class="modal fade" id="myModal${i}" role="dialog">
+          <div class="modal-dialog">
+          
+            <!--Modal content-->
+            <div class="modal-content">
+              <div class="modal-header text-body">
+                <h4 class="modal-title text-body">${course.title}</h4>
+              </div>
+              <div class="modal-body text-body">
+                <p>${"COURSE CODE: "+course.code}</p>
+                <p>${"SECTION: "+course.section}</p>
+                <p>${"TYPE: "+course.type}</p>
+                <p>${"TIME: "+(course.timeStart + "-" + course.timeFinish)}</p>
+                <p>${"DAY: "+course.day}</p>
+                <p>${"PROFESSOR: "+course.professor}</p>
+              </div>
+              <div class="modal-footer">
+              <!--Close Button-->
+                <button type="button" class="btn btn-primary" data-dismiss="modal">${"Close"}</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+        row.insertCell().innerHTML += course.code;
+        row.insertCell().innerHTML += course.section;
+        row.insertCell().innerHTML += course.type;
+        row.insertCell().innerHTML += (course.timeStart + "-" + course.timeFinish);
+        row.insertCell().innerHTML += course.day;
+        row.insertCell().innerHTML += course.professor;
         list.appendChild(row);
     }
 }
