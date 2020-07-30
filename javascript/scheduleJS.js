@@ -179,23 +179,15 @@ class UI {
     static addCourseToList(course) {
         const list = document.querySelector('#course-list');
         const row = document.createElement('tr');
-        /*row.innerHTML = `
-        <td>${course.title}<td/>
-        <td>${course.code}<td/>
-        <td>${course.section}<td/>
-        <td>${course.type}<td/>
-        <td>${course.timeStart}-${course.timeFinish}<td/>
-        <td>${course.day}<td/>
-        <td>${course.professor}<td/>
-        `*/
-
+        //Data Cells
         row.insertCell().innerHTML+=course.title;
         row.insertCell().innerHTML+=course.code;
         row.insertCell().innerHTML+=course.section;
         row.insertCell().innerHTML+=course.type;
-        row.insertCell().innerHTML+=course.timeStart-course.timeFinish;
+        row.insertCell().innerHTML+=(course.timeStart+"-"+course.timeFinish);
         row.insertCell().innerHTML+=course.day;
         row.insertCell().innerHTML+=course.professor;
+        row.insertCell().innerHTM = document.createElement('button');
         list.appendChild(row);
     }
 }
