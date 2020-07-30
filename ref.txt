@@ -56,3 +56,5 @@ https://cdn.pixabay.com/photo/2018/01/12/16/31/nougat-3078581_960_720.jpg mousse
 
 code
 https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-cards.php side card
+https://www.youtube.com/watch?v=JaMCxVWtW58&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=6 js tutorial
+https://www.youtube.com/watch?v=MBaw_6cPmAw model
